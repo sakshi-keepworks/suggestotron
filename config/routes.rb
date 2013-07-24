@@ -1,4 +1,6 @@
 Suggestotron::Application.routes.draw do
+  resources :votes
+
   get "about/me"
   # resources :about_mes
 
@@ -8,7 +10,8 @@ Suggestotron::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'topics#index'
+  #
+   root 'topics#index'
   #   root 'about_mes#index'
   # Example of regular route:
     # get 'about_me/:id' => 'catalog#view'
